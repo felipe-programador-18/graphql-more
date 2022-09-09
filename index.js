@@ -1,5 +1,8 @@
 const { ApolloServer, gql } = require("apollo-server")
 
+
+
+
 const products = [
     {
       id: "53a0724c-a416-4cac-ae45-bfaedce1f147",
@@ -100,14 +103,179 @@ const products = [
   ];
   
 
+const user = [
+  {
+    "id": "602",
+    "firstName": "Elisa",
+    "lastName": "Pereira",
+    "userName": "elisa.pereira",
+    "indexRef": 17,
+    "createdAt": "2017-02-15T11:29:40.799Z"
+  },
+  {
+    "id": "903",
+    "firstName": "Enzo",
+    "lastName": "Barros",
+    "userName": "enzo_barros",
+    "indexRef": 18,
+    "createdAt": "2018-03-28T00:53:08.981Z"
+  },
+  {
+    "id": "470",
+    "firstName": "Danilo",
+    "lastName": "Carvalho",
+    "userName": "danilo95",
+    "indexRef": 9,
+    "createdAt": "2020-04-23T12:32:02.614Z"
+  },
+  {
+    "id": "115",
+    "firstName": "Talita",
+    "lastName": "Melo",
+    "userName": "talita.melo",
+    "indexRef": 3,
+    "createdAt": "2017-04-23T19:24:43.992Z"
+  },
+  {
+    "id": "812",
+    "firstName": "Heloísa",
+    "lastName": "Albuquerque",
+    "userName": "heloisa.albuquerque",
+    "indexRef": 19,
+    "createdAt": "2015-04-23T05:19:20.309Z"
+  },
+  {
+    "id": "111",
+    "firstName": "Emanuel",
+    "lastName": "Carvalho",
+    "userName": "emanuel.carvalho",
+    "indexRef": 13,
+    "createdAt": "2018-01-11T19:22:49.010Z"
+  },
+  {
+    "id": "453",
+    "firstName": "Murilo",
+    "lastName": "Nogueira",
+    "userName": "murilo_nogueira",
+    "indexRef": 5,
+    "createdAt": "2020-07-29T03:50:46.143Z"
+  },
+  {
+    "id": "90",
+    "firstName": "Maria Eduarda",
+    "lastName": "Costa",
+    "userName": "mariaeduarda_costa12",
+    "indexRef": 12,
+    "createdAt": "2017-05-28T18:06:23.258Z"
+  },
+  {
+    "id": "958",
+    "firstName": "Marcelo",
+    "lastName": "Carvalho",
+    "userName": "marcelo_carvalho",
+    "indexRef": 4,
+    "createdAt": "2019-09-30T19:31:56.383Z"
+  },
+  {
+    "id": "592",
+    "firstName": "Salvador",
+    "lastName": "Moraes",
+    "userName": "salvador.moraes",
+    "indexRef": 16,
+    "createdAt": "2020-09-28T07:17:47.496Z"
+  },
+  {
+    "id": "502",
+    "firstName": "Morgana",
+    "lastName": "Santos",
+    "userName": "morgana_santos",
+    "indexRef": 15,
+    "createdAt": "2015-05-04T21:11:19.982Z"
+  },
+  {
+    "id": "247",
+    "firstName": "Alice",
+    "lastName": "Barros",
+    "userName": "alice_barros38",
+    "indexRef": 20,
+    "createdAt": "2020-06-09T15:15:18.817Z"
+  },
+  {
+    "id": "935",
+    "firstName": "João Pedro",
+    "lastName": "Santos",
+    "userName": "joaopedro_santos5",
+    "indexRef": 7,
+    "createdAt": "2017-07-28T00:30:32.214Z"
+  },
+  {
+    "id": "374",
+    "firstName": "Feliciano",
+    "lastName": "Moreira",
+    "userName": "feliciano.moreira",
+    "indexRef": 11,
+    "createdAt": "2016-05-08T12:05:05.853Z"
+  },
+  {
+    "id": "30",
+    "firstName": "Bernardo",
+    "lastName": "Carvalho",
+    "userName": "bernardo41",
+    "indexRef": 10,
+    "createdAt": "2018-04-04T02:39:50.892Z"
+  },
+  {
+    "id": "439",
+    "firstName": "Isaac",
+    "lastName": "Martins",
+    "userName": "isaac55",
+    "indexRef": 6,
+    "createdAt": "2020-05-04T08:59:15.292Z"
+  },
+  {
+    "id": "352",
+    "firstName": "Carla",
+    "lastName": "Batista",
+    "userName": "carla.batista",
+    "indexRef": 14,
+    "createdAt": "2020-01-18T09:23:51.365Z"
+  },
+  {
+    "id": "5",
+    "firstName": "Hugo",
+    "lastName": "Reis",
+    "userName": "hugo25",
+    "indexRef": 2,
+    "createdAt": "2015-10-18T00:56:33.763Z"
+  },
+  {
+    "id": "29",
+    "firstName": "Rafaela",
+    "lastName": "Saraiva",
+    "userName": "rafaela.saraiva91",
+    "indexRef": 8,
+    "createdAt": "2019-10-07T20:17:43.678Z"
+  },
+  {
+    "id": "771",
+    "firstName": "Márcia",
+    "lastName": "Carvalho",
+    "userName": "marcia_carvalho81",
+    "indexRef": 1,
+    "createdAt": "2016-12-08T00:49:39.870Z"
+  }
+]
+
+
 
 const typeDefs = gql`
  type Query {
    products:[Product]!,
    product(id:ID): Product,
    categories: [Category!]!,
-   category(id: ID!): Category
-
+   category(id: ID!): Category,
+   user: [User!]!,
+   users(id:ID!): User
  }
   
   type Product{
@@ -124,6 +292,18 @@ const typeDefs = gql`
     id: ID,
     name: String
   }
+  
+  type User{
+    id: ID,
+    firstName: String,
+    lastName:String,
+    userName:String,
+    indexRef: Int,
+    createdAt: String
+  }
+  
+
+
 
 `
 
@@ -143,16 +323,25 @@ const resolvers = {
        category: (parent, args, context) => {
         const {id} = args ;
         return categories.find((category) => category.id === id)
-        
-       } 
-    },
+         
+       },
+       
+       user: (parent, args, context) =>  user,
+       users: (parent, args,context) => {
+        const { id} = args ;
+        return user.find((users) => users.id === id )
+       }
 
+       
+
+    }
 
 }
  
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+  
 })
 
 
