@@ -1,6 +1,8 @@
 const { ApolloServer, gql } = require("apollo-server")
+//import { context } from "./graph/context";
 
-
+//const context = require("./graph/context")
+//const { Resolvers, TypeDefs } = require("./graph/schema")
 
 
 const products = [
@@ -294,7 +296,7 @@ const typeDefs = gql`
    quantity: Int,
    price: Float,
    image: String,
-
+   category : Category!
   }
 
   type Category{
@@ -349,6 +351,13 @@ const resolvers = {
       return products.filter((product) => product.categoryId === CategoryId)
 
     }
+   },
+
+   Product:{
+    category:(parent, args, context ) => {
+      const categoryId = parent.categoryId;
+      return categories.find((category) => category.id === categoryId)
+    }
    }
 
 
@@ -357,7 +366,6 @@ const resolvers = {
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-  
 })
 
 

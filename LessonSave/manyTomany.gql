@@ -1,0 +1,20 @@
+
+In this case i am add category inside product!!
+
+type Product{
+   id: ID, 
+   name: String,
+   description: String,
+   quantity: Int,
+   price: Float,
+   image: String,
+   category : Category!
+}
+
+
+Product:{
+    category:(parent, args, context ) => {
+      const categoryId = parent.categoryId;
+      return categories.find((category) => category.id === categoryId)
+    }
+   }
