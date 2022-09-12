@@ -121,7 +121,9 @@ const user = [
     "lastName": "Pereira",
     "userName": "elisa.pereira",
     "indexRef": 17,
-    "createdAt": "2017-02-15T11:29:40.799Z"
+    "createdAt": "2017-02-15T11:29:40.799Z",
+    "categoryId": '34115aac-0ff5-4859-8f43-10e8db23602b',
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "903",
@@ -129,7 +131,8 @@ const user = [
     "lastName": "Barros",
     "userName": "enzo_barros",
     "indexRef": 18,
-    "createdAt": "2018-03-28T00:53:08.981Z"
+    "createdAt": "2018-03-28T00:53:08.981Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "470",
@@ -137,7 +140,9 @@ const user = [
     "lastName": "Carvalho",
     "userName": "danilo95",
     "indexRef": 9,
-    "createdAt": "2020-04-23T12:32:02.614Z"
+    "createdAt": "2020-04-23T12:32:02.614Z",
+    
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "115",
@@ -145,7 +150,9 @@ const user = [
     "lastName": "Melo",
     "userName": "talita.melo",
     "indexRef": 3,
-    "createdAt": "2017-04-23T19:24:43.992Z"
+    "createdAt": "2017-04-23T19:24:43.992Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
+    
   },
   {
     "id": "812",
@@ -153,7 +160,9 @@ const user = [
     "lastName": "Albuquerque",
     "userName": "heloisa.albuquerque",
     "indexRef": 19,
-    "createdAt": "2015-04-23T05:19:20.309Z"
+    "createdAt": "2015-04-23T05:19:20.309Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
+    
   },
   {
     "id": "111",
@@ -161,7 +170,9 @@ const user = [
     "lastName": "Carvalho",
     "userName": "emanuel.carvalho",
     "indexRef": 13,
-    "createdAt": "2018-01-11T19:22:49.010Z"
+    "createdAt": "2018-01-11T19:22:49.010Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
+  
   },
   {
     "id": "453",
@@ -169,7 +180,9 @@ const user = [
     "lastName": "Nogueira",
     "userName": "murilo_nogueira",
     "indexRef": 5,
-    "createdAt": "2020-07-29T03:50:46.143Z"
+    "createdAt": "2020-07-29T03:50:46.143Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
+   
   },
   {
     "id": "90",
@@ -177,7 +190,9 @@ const user = [
     "lastName": "Costa",
     "userName": "mariaeduarda_costa12",
     "indexRef": 12,
-    "createdAt": "2017-05-28T18:06:23.258Z"
+    "createdAt": "2017-05-28T18:06:23.258Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
+    
   },
   {
     "id": "958",
@@ -185,7 +200,8 @@ const user = [
     "lastName": "Carvalho",
     "userName": "marcelo_carvalho",
     "indexRef": 4,
-    "createdAt": "2019-09-30T19:31:56.383Z"
+    "createdAt": "2019-09-30T19:31:56.383Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "592",
@@ -193,7 +209,8 @@ const user = [
     "lastName": "Moraes",
     "userName": "salvador.moraes",
     "indexRef": 16,
-    "createdAt": "2020-09-28T07:17:47.496Z"
+    "createdAt": "2020-09-28T07:17:47.496Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "502",
@@ -201,7 +218,8 @@ const user = [
     "lastName": "Santos",
     "userName": "morgana_santos",
     "indexRef": 15,
-    "createdAt": "2015-05-04T21:11:19.982Z"
+    "createdAt": "2015-05-04T21:11:19.982Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "247",
@@ -209,7 +227,8 @@ const user = [
     "lastName": "Barros",
     "userName": "alice_barros38",
     "indexRef": 20,
-    "createdAt": "2020-06-09T15:15:18.817Z"
+    "createdAt": "2020-06-09T15:15:18.817Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "935",
@@ -217,7 +236,8 @@ const user = [
     "lastName": "Santos",
     "userName": "joaopedro_santos5",
     "indexRef": 7,
-    "createdAt": "2017-07-28T00:30:32.214Z"
+    "createdAt": "2017-07-28T00:30:32.214Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "374",
@@ -225,7 +245,8 @@ const user = [
     "lastName": "Moreira",
     "userName": "feliciano.moreira",
     "indexRef": 11,
-    "createdAt": "2016-05-08T12:05:05.853Z"
+    "createdAt": "2016-05-08T12:05:05.853Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "30",
@@ -233,7 +254,8 @@ const user = [
     "lastName": "Carvalho",
     "userName": "bernardo41",
     "indexRef": 10,
-    "createdAt": "2018-04-04T02:39:50.892Z"
+    "createdAt": "2018-04-04T02:39:50.892Z",
+    categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b'
   },
   {
     "id": "439",
@@ -311,12 +333,10 @@ const typeDefs = gql`
     lastName:String,
     userName:String,
     indexRef: Int,
-    createdAt: String
+    createdAt: String,
+    category : Category
   }
   
-
-
-
 `
 
 const resolvers = {
@@ -349,7 +369,6 @@ const resolvers = {
       console.log(parent)
       const CategoryId = parent.id
       return products.filter((product) => product.categoryId === CategoryId)
-
     }
    },
 
@@ -357,6 +376,14 @@ const resolvers = {
     category:(parent, args, context ) => {
       const categoryId = parent.categoryId;
       return categories.find((category) => category.id === categoryId)
+    }
+   },
+
+   User:{
+    category:(parent, args, context) => {
+     const categoryId = parent.categoryId
+     console.log(categoryId)
+     return categories.find((category) => category.id === categoryId )
     }
    }
 
